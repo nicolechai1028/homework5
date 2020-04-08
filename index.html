@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
@@ -16,73 +16,73 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <div  class="lead" id="currentDay"><h6></h6></div>
+      <div class="lead" id="currentDay"><h5></h5></div>
     </header>
 
     <div class="container">
       <!-- Timeblocks go here -->
       <!--8 AM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">8 AM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour1">8 AM</div>
+        <textarea class="col-md-10" id="description1"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--9 AM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">9 AM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour2">9 AM</div>
+        <textarea class="col-md-10" id="description2"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--10 AM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">10 AM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour3">10 AM</div>
+        <textarea class="col-md-10" id="description3"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--11 AM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">11 AM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour4">11 AM</div>
+        <textarea class="col-md-10" id="description4"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--12 AM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">12 AM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour5">12 AM</div>
+        <textarea class="col-md-10" id="description5"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--1 PM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">1 PM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour6">1 PM</div>
+        <textarea class="col-md-10" id="description6"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--2 PM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">2 PM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour7">2 PM</div>
+        <textarea class="col-md-10" id="description7"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--3 PM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">3 PM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour8">3 PM</div>
+        <textarea class="col-md-10" id="description8"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--4 PM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">4 PM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour9">4 PM</div>
+        <textarea class="col-md-10" id="description9"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
       <!--5 PM-->
       <div class="row justify-content-md-center border-top border-bottom calendar-row" id="calendar-row1">
-        <div class="col-md-1" id="hour">5 PM</div>
-        <textarea class="col-md-10"></textarea>
+        <div class="col-md-1" id="hour10">5 PM</div>
+        <textarea class="col-md-10" id="description10"></textarea>
         <button class="col-md-1" id="saveBtn"><i class="far fa-save"></i></button>
       </div>
     </div>
-
+    <script src="moment.min.js"></script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
